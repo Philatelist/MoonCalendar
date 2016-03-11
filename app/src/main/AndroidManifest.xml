@@ -15,6 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".FunctionViewActivity"></activity>
+
+        <activity android:name=".FunctionDescriptionActivity"></activity>
+
+
+
     </application>
 
 </manifest>
