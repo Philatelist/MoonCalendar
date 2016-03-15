@@ -7,7 +7,6 @@
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         >
 
         <TableLayout
@@ -15,262 +14,282 @@
             android:layout_height="wrap_content"
             >
 
-            <!--<LinearLayout-->
-                <!--android:orientation="horizontal"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!-->-->
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
-            <!--</LinearLayout>-->
-
-            <LinearLayout>
 
                 <Button
                     android:id="@+id/button_functionlImpactIndividual"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Влияние на личность" />
 
                 <Button
                     android:id="@+id/buttonlvl2"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Бизнес" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl3"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Деньги" />
 
                 <Button
                     android:id="@+id/buttonlvl4"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Здоровье" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl5"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Стрижка волос" />
 
                 <Button
                     android:id="@+id/buttonlvl6"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Физнагрузки" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl7"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Отношения" />
 
                 <Button
                     android:id="@+id/buttonlvl8"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Брак" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl9"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="День рождения" />
 
                 <Button
                     android:id="@+id/buttonlvl10"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Предупреждения" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl11"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Сны" />
 
                 <Button
                     android:id="@+id/buttonlvl12"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Растениеводство" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl13"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Начинания" />
 
                 <Button
                     android:id="@+id/buttonlvl14"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Общение" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl15"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Домашние дела" />
 
                 <Button
                     android:id="@+id/buttonlvl16"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Путешествия" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl17"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Отдых" />
 
                 <Button
                     android:id="@+id/buttonlvl18"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Общение с начальством" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl19"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Смена работы" />
 
                 <Button
                     android:id="@+id/buttonlvl20"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Недвижимость" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl21"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Творчество" />
 
                 <Button
                     android:id="@+id/buttonlvl22"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Наука" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl23"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Искусство" />
 
                 <Button
                     android:id="@+id/buttonlvl24"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Обучение" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl25"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Застолье" />
 
                 <Button
                     android:id="@+id/buttonlvl26"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Алкоголь" />
 
             </LinearLayout>
 
-            <LinearLayout>
+            <LinearLayout
+                android:layout_height="150dp"
+                >
 
                 <Button
                     android:id="@+id/buttonlvl27"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Секс" />
 
                 <Button
                     android:id="@+id/buttonlvl28"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Зачатие" />
 

@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        <activity android:name=".activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,11 +16,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FunctionViewActivity"></activity>
+        <activity android:name=".activity.FunctionViewActivity"></activity>
 
-        <activity android:name=".FunctionDescriptionActivity"></activity>
+        <activity android:name=".activity.FunctionDescriptionActivity"></activity>
 
+        <activity android:name=".activity.MoonPhasesViewActivity"></activity>
 
+        <activity android:name=".activity.MoonPhasesDescriptionActivity"></activity>
+
+        <activity android:name=".activity.ZodiacViewActivity"></activity>
+
+        <activity android:name=".activity.ZodiacDescriptionActivity"></activity>
+
+        <activity android:name=".activity.MoonDayDescription"></activity>
 
     </application>
 

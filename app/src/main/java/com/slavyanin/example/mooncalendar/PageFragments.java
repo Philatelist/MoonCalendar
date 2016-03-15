@@ -33,7 +33,7 @@ public class PageFragments extends Fragment {
                              Bundle savedInstanceState) {
         View result=inflater.inflate(R.layout.fragment_page, container, false);
         TextView pageHeader=(TextView)result.findViewById(R.id.displayText);
-        pageHeader.setText("Фрагмент " + String.valueOf(pageNumber+1));
+        pageHeader.setText(String.valueOf(pageNumber+1) + "-й Лунный день." );
         return result;
     }
 }

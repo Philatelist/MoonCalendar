@@ -1,7 +1,9 @@
-package com.slavyanin.example.mooncalendar;
+package com.slavyanin.example.mooncalendar.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.slavyanin.example.mooncalendar.R;
 
 public class FunctionDescriptionActivity extends AppCompatActivity{
 

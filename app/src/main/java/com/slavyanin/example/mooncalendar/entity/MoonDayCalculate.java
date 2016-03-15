@@ -1,13 +1,13 @@
-package com.slavyanin.example.mooncalendar;
+package com.slavyanin.example.mooncalendar.entity;
 
-public class MoonDayCalc {
+public class MoonDayCalculate {
 
     private int day;
     private int month;
     private int year;
     private double moonday, eq, eq1, eq2;
 
-    public double MoonDayCalc(int day, int month, int year) {
+    public double MoonDayCalculate(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
@@ -56,7 +56,7 @@ public class MoonDayCalc {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        MoonDayCalc that = (MoonDayCalc) o;
+        MoonDayCalculate that = (MoonDayCalculate) o;
 
         if (day != that.day) return false;
         if (month != that.month) return false;
@@ -74,7 +74,7 @@ public class MoonDayCalc {
 
     @Override
     public String toString() {
-        return "MoonDayCalc{" +
+        return "MoonDayCalculate{" +
                 "day=" + day +
                 ", month=" + month +
                 ", year=" + year +
