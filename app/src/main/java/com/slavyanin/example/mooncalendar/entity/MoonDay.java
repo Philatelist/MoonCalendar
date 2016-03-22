@@ -21,6 +21,10 @@ public class MoonDay {
         this.description = description;
     }
 
+    public MoonDay(int i) {
+        this.number = i;
+    }
+
     public int getNumber() {
         return number;
     }

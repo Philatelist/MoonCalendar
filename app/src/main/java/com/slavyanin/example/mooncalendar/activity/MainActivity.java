@@ -3,6 +3,7 @@ package com.slavyanin.example.mooncalendar.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -10,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.slavyanin.example.mooncalendar.adapter.MyAdapter;
 import com.slavyanin.example.mooncalendar.R;
 
 public class MainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener{
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     private Button buttonMoonPhase;
     private Button buttonZodiac;
     private GestureDetectorCompat mDetector;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,35 +52,11 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             }
         });
 
+        //Slide page function (to right)
+//        ViewPager pager=(ViewPager)findViewById(R.id.pager);
+//        pager.setAdapter(new MyAdapter(getSupportFragmentManager()));
 
     }
-
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event){
-//
-//        int action = MotionEventCompat.getActionMasked(event);
-//
-//        switch(action) {
-//            case (MotionEvent.ACTION_DOWN) :
-//                Log.d(DEBUG_TAG,"Action was DOWN");
-//                return true;
-//            case (MotionEvent.ACTION_MOVE) :
-//                Log.d(DEBUG_TAG,"Action was MOVE");
-//                return true;
-//            case (MotionEvent.ACTION_UP) :
-//                Log.d(DEBUG_TAG,"Action was UP");
-//                return true;
-//            case (MotionEvent.ACTION_CANCEL) :
-//                Log.d(DEBUG_TAG,"Action was CANCEL");
-//                return true;
-//            case (MotionEvent.ACTION_OUTSIDE) :
-//                Log.d(DEBUG_TAG,"Movement occurred outside bounds " +
-//                        "of current screen element");
-//                return true;
-//            default :
-//                return super.onTouchEvent(event);
-//        }
-//    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event){
@@ -91,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return true;
     }
 
+
+    //Gesture detect
     @Override
     public boolean onFling(MotionEvent event1, MotionEvent event2,
                            float velocityX, float velocityY) {

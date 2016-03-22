@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.slavyanin.example.mooncalendar.PageFragments;
+import com.slavyanin.example.mooncalendar.fragment.PageFragments;
 
 
 public class MyAdapter extends FragmentPagerAdapter {

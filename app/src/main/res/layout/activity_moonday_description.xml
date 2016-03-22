@@ -2,12 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"
         android:id="@+id/scrollView">
 
         <TableLayout
@@ -43,20 +53,23 @@
     </ScrollView>
 
     <ScrollView
+        android:id="@+id/scrollView_Moonday_Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView2"
         android:layout_below="@+id/scrollView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" >
 
+        <TextView
+            android:id="@+id/textView_moonday_full_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT MOON DAY DESCRIPTION"
+            android:layout_below="@+id/scrollView2"
+            android:layout_centerHorizontal="true"
+            />
+
     </ScrollView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TEXT MOON DAY DESCRIPTION"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/scrollView2"
-        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
