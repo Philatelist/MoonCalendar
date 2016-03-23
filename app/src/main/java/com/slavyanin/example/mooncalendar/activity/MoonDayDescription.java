@@ -35,7 +35,7 @@ public class MoonDayDescription extends AppCompatActivity implements GestureDete
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        getSupportActionBar().setLogo(R.drawable.logo_app1);
+//        getSupportActionBar().setLogo(R.drawable.logo_app1);
         getSupportActionBar().setTitle(R.string.moonDayDescription);
         return super.onCreateOptionsMenu(menu);
     }

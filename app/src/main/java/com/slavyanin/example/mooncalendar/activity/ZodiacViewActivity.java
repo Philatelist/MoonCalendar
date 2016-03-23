@@ -40,7 +40,7 @@ public class ZodiacViewActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        getSupportActionBar().setLogo(R.drawable.logo_app1);
+//        getSupportActionBar().setLogo(R.drawable.logo_app1);
         getSupportActionBar().setTitle(R.string.zodiacView);
         return super.onCreateOptionsMenu(menu);
     }
