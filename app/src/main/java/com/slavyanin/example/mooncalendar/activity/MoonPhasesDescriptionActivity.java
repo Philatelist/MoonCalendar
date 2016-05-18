@@ -7,8 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.slavyanin.example.mooncalendar.R;
+
+import org.w3c.dom.Text;
 
 public class MoonPhasesDescriptionActivity extends AppCompatActivity{
 
@@ -21,6 +25,9 @@ public class MoonPhasesDescriptionActivity extends AppCompatActivity{
         //Adding ActionBar
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        ImageView phase = (ImageView) findViewById(R.id.image_phase);
+        TextView shortText = (TextView) findViewById(R.id.textView_phase_short_description);
 
     }
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/icon_phase"
+        android:layout_width="100dp"
+        android:contentDescription="No image"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/name_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name phase"
+        android:layout_toRightOf="@+id/icon_phase"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text phase"
+        android:layout_below="@+id/name_phase"
+        android:layout_toRightOf="@+id/icon_phase"
+        android:paddingLeft="10dp"
+        />
+</RelativeLayout>

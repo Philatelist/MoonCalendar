@@ -27,12 +27,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
-                <Button
-                    android:id="@+id/button_phase_new_moon"
+                <ImageView
+                    android:id="@+id/image_phase"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:text="Moon phase"
                     />
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_new_moon"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="Moon phase"-->
+                    <!--/>-->
 
                 <TextView
                     android:id="@+id/textView_phase_short_description"
@@ -54,7 +60,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView_phase_fourth"
+                    android:id="@+id/textView_phase_full_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Full description moon phase"

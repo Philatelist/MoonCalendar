@@ -1,6 +1,10 @@
 package com.slavyanin.example.mooncalendar.activity;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.view.GestureDetectorCompat;
@@ -11,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.support.v7.widget.Toolbar;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.slavyanin.example.mooncalendar.R;
 
@@ -19,6 +25,7 @@ public class MoonDayDescription extends AppCompatActivity implements GestureDete
     private static final String DEBUG_TAG = "Gestures";
     private GestureDetectorCompat mDetector;
 
+//    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +37,20 @@ public class MoonDayDescription extends AppCompatActivity implements GestureDete
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+        TextView fulldescription = (TextView) findViewById(R.id.textView_moonday_full_description);
+
+        final LinearLayout linearSymbol = (LinearLayout) findViewById(R.id.symbol_linearlyout);
+        final LinearLayout linearStone = (LinearLayout) findViewById(R.id.stone_linearlyout);
+
+        //Create border to ScrollLayout whit radius corner
+        GradientDrawable shapeGradient = new GradientDrawable();
+        shapeGradient.setShape(GradientDrawable.RECTANGLE);
+        shapeGradient.setColor(Color.TRANSPARENT);
+        shapeGradient.setStroke(2, Color.parseColor("#c8e6ff"));
+        shapeGradient.setCornerRadius(15.0f);
+
+        linearSymbol.setBackground(shapeGradient);
+        linearStone.setBackground(shapeGradient);
     }
 
     @Override

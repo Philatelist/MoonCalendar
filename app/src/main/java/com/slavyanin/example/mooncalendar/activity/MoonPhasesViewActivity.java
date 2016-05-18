@@ -8,9 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.slavyanin.example.mooncalendar.R;
+import com.slavyanin.example.mooncalendar.adapter.PhaseAdapter;
+import com.slavyanin.example.mooncalendar.entity.MoonPhase;
+
+import java.util.ArrayList;
 
 public class MoonPhasesViewActivity extends AppCompatActivity{
 
@@ -19,21 +25,30 @@ public class MoonPhasesViewActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView((R.layout.activity_moonphases_view));
 
-        Button buttonPhaseNewMoon = (Button) findViewById(R.id.button_phase_new_moon);
-
-        buttonPhaseNewMoon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MoonPhasesViewActivity.this, MoonPhasesDescriptionActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
         //Adding ActionBar
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
+        //Add listview with entity, with adapter
+        ListView listPhase = (ListView) findViewById(R.id.listview_phase);
+
+        ArrayList<MoonPhase> phases = new ArrayList<>();
+        for (int i = 0; i < 8; i++) {
+            MoonPhase phaseObj = new MoonPhase();
+            phases.add(phaseObj);
+        }
+
+        PhaseAdapter adapter = new PhaseAdapter(this, R.layout.list_phase, phases);
+        listPhase.setAdapter(adapter);
+
+        listPhase.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MoonPhasesViewActivity.this, MoonPhasesDescriptionActivity.class);
+                intent.putExtra("key", position);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -55,8 +70,8 @@ public class MoonPhasesViewActivity extends AppCompatActivity{
             case R.id.action_share:
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.share_subject);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "TEXT"); // doesn`t work -- shareIntent.putExtra(Intent.EXTRA_TEXT, R.string.share_text);
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.share_subject)); //Проверить работоспособность getString
+                shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text));
                 startActivity(Intent.createChooser(shareIntent, "Hello")); //doesn`t work -- startActivity(Intent.createChooser(shareIntent, R.string.share_title));
                 return true;
 

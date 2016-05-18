@@ -14,183 +14,191 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ListView
+        android:id="@+id/listview_phase"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/button_phase_new_moon"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="New Moon"
-                    />
+    </ListView>
 
-                <TextView
-                    android:id="@+id/textView_phase_new_moon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+        <!-->-->
+        <!--<TableLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!-->-->
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_first"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="The first phase"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_new_moon"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="New Moon"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_first"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_new_moon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_frist_quarter"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="First quarter"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_first"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="The first phase"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_first_quarter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_first"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_second"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="The second phase"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_frist_quarter"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="First quarter"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_second"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_first_quarter"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_full_moon"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="Full moon"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_second"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="The second phase"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_full_moon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_second"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_third"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="The third phase"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_full_moon"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="Full moon"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_third"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_full_moon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_third_quarter"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="Third quarter"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_third"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="The third phase"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_third_quarter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_third"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
-                <Button
-                    android:id="@+id/button_phase_fourth"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:text="The fourth phase"
-                    />
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_third_quarter"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="Third quarter"-->
+                    <!--/>-->
 
-                <TextView
-                    android:id="@+id/textView_phase_fourth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Text"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
-        </TableLayout>
-    </ScrollView>
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_third_quarter"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/button_phase_fourth"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="The fourth phase"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView_phase_fourth"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="New Text"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+        <!--</TableLayout>-->
+    <!--</ScrollView>-->
 </LinearLayout>
 
 
